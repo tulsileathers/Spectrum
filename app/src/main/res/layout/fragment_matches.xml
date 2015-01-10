@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.jayceleathers.me.spectrum.Fragments.MatchesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <Button
+                android:id="@+id/btnPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ivPhoto"
+                android:text="Pass"
+                android:textSize="10dp"/>
+            <com.parse.ParseImageView
+                android:id="@+id/ivPhoto"
+                android:layout_centerHorizontal="true"
+                android:layout_width="200dp"
+                android:layout_height="200dp" />
+             <Button
+                 android:id="@+id/btnLike"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@+id/ivPhoto"
+                 android:text="like"
+                 android:textSize="10dp"/>
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:layout_below="@+id/ivPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Michael K."
+                android:textSize="20dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_below="@+id/tvUsername"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I'm a description fajljgkl a jalkfj askljf sajf lksajdf klsajjaslkfj klasjf ksaljksaf klasjdfklasjjfsd jaklsfj klasdjf klsaj lkajf klasdjf k kjafd lksadj flksdj alksfj lkasfs"/>
+
+            <TextView
+                android:id="@+id/tvGenBioLabel"
+                android:layout_below="@+id/tvDescription"
+                android:text="Biological Gender"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+
+            <SeekBar
+                android:layout_below="@+id/tvGenBioLabel"
+                android:id="@+id/sbGenderBiological"
+                android:layout_centerHorizontal="true"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:progress="128"
+                android:max="256"/>
+
+            <TextView
+                android:id="@+id/tvGenIdentityLabel"
+                android:text="Gender Identity"
+                android:layout_below="@+id/sbGenderBiological"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+            <SeekBar
+                android:id="@+id/sbGenderIdentity"
+                android:layout_below="@+id/tvGenIdentityLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:progress="128"
+                android:max="256"/>
+
+            <TextView
+                android:id="@+id/tvGenExpressionLabel"
+                android:text="Gender Expression"
+                android:layout_below="@+id/sbGenderIdentity"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+
+            <SeekBar
+                android:id="@+id/sbGenderExpression"
+                android:layout_below="@+id/tvGenExpressionLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:progress="128"
+                android:max="256"/>
+
+            <TextView
+                android:id="@+id/tvSexLabel"
+                android:text="Sexual Identity"
+                android:layout_below="@+id/sbGenderExpression"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="20dp"/>
+
+
+            <SeekBar
+                android:id="@+id/sbSexualIdentity"
+                android:layout_below="@+id/tvSexLabel"
+                android:layout_centerHorizontal="true"
+                android:layout_width="256dp"
+                android:layout_height="wrap_content"
+                android:progress="128"
+                android:max="256"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>

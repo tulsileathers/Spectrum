@@ -1,0 +1,47 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.jayceleathers.me.spectrum.Fragments.RegisterFragment">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/etName"
+        android:hint="Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Email"
+        android:layout_below="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:layout_below="@+id/etEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/etPasswordAgain"
+        android:hint="Re-enter Password"
+        android:layout_below="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/etPasswordAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"/>
+   <!--<Button-->
+        <!--android:id="@+id/btnTakePhoto"-->
+        <!--android:layout_below="@+id/btnRegister"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Take Photo"/>-->
+
+
+</RelativeLayout>
+
+</FrameLayout>

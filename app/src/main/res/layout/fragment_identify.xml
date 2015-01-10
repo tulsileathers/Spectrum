@@ -1,0 +1,218 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="apps.jayceleathers.me.spectrum.Fragments.IdentifyFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvIdentifyLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="How do you identify?"
+            android:textSize="20dp"
+            android:textColor="#000000"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/tvGenBioLabel"
+            android:text="Biological Gender"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/tvIdentifyLabel"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/bioRow"
+            android:layout_below="@+id/tvGenBioLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/maleBodiedText"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male Bodied"/>
+
+            <TextView
+                android:id="@+id/bioText"
+                android:text="Intersex"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/femaleBodiedText"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female Bodied"/>
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:layout_below="@+id/bioRow"
+            android:id="@+id/sbGenderBiological"
+            android:layout_centerHorizontal="true"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:progress="128"
+            android:max="256"/>
+
+        <TextView
+            android:id="@+id/tvGenIdentityLabel"
+            android:text="Gender Identity"
+            android:layout_below="@+id/sbGenderBiological"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/genderIdentityRow"
+            android:layout_below="@id/tvGenIdentityLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Man"/>
+
+            <TextView
+                android:text="Genderqueer/Bigender"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Woman"/>
+
+        </RelativeLayout>
+
+        <SeekBar
+            android:id="@+id/sbGenderIdentity"
+            android:layout_below="@+id/genderIdentityRow"
+            android:layout_centerHorizontal="true"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:progress="128"
+            android:max="256"/>
+
+        <TextView
+            android:id="@+id/tvGenExpressionLabel"
+            android:text="Gender Expression"
+            android:layout_below="@+id/sbGenderIdentity"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/genderExpressionRow"
+            android:layout_below="@id/tvGenExpressionLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Masculine"/>
+
+            <TextView
+                android:text="Androgynous"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Feminine"/>
+        </RelativeLayout>
+
+
+        <SeekBar
+            android:id="@+id/sbGenderExpression"
+            android:layout_below="@+id/genderExpressionRow"
+            android:layout_centerHorizontal="true"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:progress="128"
+            android:max="256"/>
+
+        <TextView
+            android:id="@+id/tvSexLabel"
+            android:text="Sexual Identity"
+            android:layout_below="@+id/sbGenderExpression"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <RelativeLayout
+            android:id="@+id/sexualIdentityRow"
+            android:layout_below="@id/tvSexLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentStart="true"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="Attracted to Women"/>
+
+            <TextView
+                android:text="Pansexual/Asexual"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="Attracted to Men"/>
+
+        </RelativeLayout>
+
+
+        <SeekBar
+            android:id="@+id/sbSexualIdentity"
+            android:layout_below="@+id/sexualIdentityRow"
+            android:layout_centerHorizontal="true"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:progress="128"
+            android:max="256"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_below="@+id/sbSexualIdentity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Save"/>
+
+    </RelativeLayout>
+
+</FrameLayout>
